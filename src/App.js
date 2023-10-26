@@ -1,6 +1,8 @@
 
 import './componens/Header'
 import Header from './componens/Header';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import './main.css'
 
 

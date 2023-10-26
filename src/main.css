@@ -168,7 +168,7 @@ h2.title {
     display: inline;
   }
 }
-.nav-section .container .navigation-bar .upper-info .social-media i {
+.nav-section .container .navigation-bar .upper-info .social-media span {
   font-size: 1rem;
   margin: 20px 0 20px 15px;
 }
@@ -176,7 +176,7 @@ h2.title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }
 .nav-section .container .navigation-bar .lower-info .navigation-links {
   font-weight: 400;

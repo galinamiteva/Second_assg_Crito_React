@@ -85,7 +85,7 @@
                         
                     }
 
-                    i{
+                    span{
                         font-size: 1rem;
                         margin: 20px 0 20px 15px;
                     }         
@@ -98,7 +98,7 @@
             display:flex;
             justify-content: space-between;
             align-items: center;
-            margin:20px 0 0 0;
+            margin:20px  0;
             
             .navigation-links{
                 font-weight: $font-weight-regular-400;
