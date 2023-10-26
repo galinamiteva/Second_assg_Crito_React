@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CompanyLogos from './componens/CompanyLogos';
 import Footer from './componens/Footer';
 import Features from './componens/Features';
+import AboutCompany from './componens/AboutCompany';
+
 
 import './main.css'
 
@@ -17,7 +19,7 @@ function App() {
       <main>
         <CompanyLogos />    
         <Features /> 
-
+        <AboutCompany/>
       </main>
        
        <Footer/>

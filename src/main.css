@@ -385,3 +385,153 @@ h2.title {
   font-weight: 400;
   color: rgba(25, 25, 25, 0.7);
 }
+
+.about-company {
+  margin-top: 120px;
+}
+.about-company .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.about-company .about-img {
+  position: relative;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .about-company .about-img {
+    display: inline-block;
+  }
+}
+.about-company .about-img .walking-woman {
+  width: 480px;
+  height: 615px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-left: 30px;
+}
+.about-company .about-img .about-founder {
+  width: 300px;
+  height: 170px;
+  background-color: #BEEBFF;
+  position: absolute;
+  top: 360px;
+  padding: 30px;
+  box-shadow: 1.8px 1.8px 4px #707070;
+}
+.about-company .about-img .about-founder h5 {
+  font-family: "DM sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.about-company .about-img .about-founder h5 span {
+  font-size: 16px;
+  font-weight: bolder;
+}
+.about-company .about-img .about-background-lines {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  width: 180px;
+  height: 80px;
+}
+.about-company .about-info {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media (min-width: 992px) {
+  .about-company .about-info {
+    margin-left: 190px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-company .about-info {
+    margin-left: 190px;
+    margin-right: auto;
+  }
+}
+.about-company .about-info .about-title {
+  font-size: 35px;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  margin: 40px auto 30px auto;
+}
+@media (min-width: 992px) {
+  .about-company .about-info .about-title {
+    font-size: 45px;
+    margin: 30px auto;
+  }
+}
+.about-company .about-info p {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(25, 25, 25, 0.7);
+  margin: 30px auto 40px 0;
+}
+.about-company .about-info .paragraph {
+  margin-top: 30px;
+}
+@media (min-width: 992px) {
+  .about-company .about-info .paragraph {
+    margin-top: 45px;
+  }
+}
+.about-company .about-info .about-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .about-company .about-info .about-btn {
+    margin-top: 50px;
+  }
+}
+.about-company .about-info .about-btn .button-black {
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .about-company .about-info .about-btn .button-black {
+    padding: 15px 30px 10px;
+    width: auto;
+    display: inline-block;
+  }
+}
+.about-company .about-info .about-btn .video-btn {
+  border: 1px solid #191919;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-left: 35px;
+  margin-right: 15px;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 992px) {
+  .about-company .about-info .about-btn .video-btn {
+    display: inline-block;
+  }
+  .about-company .about-info .about-btn .video-btn:hover {
+    background-color: #191919;
+    color: #FFFFFF;
+  }
+  .about-company .about-info .about-btn .video-btn:hover i {
+    color: #FFFFFF;
+  }
+}
+.about-company .about-info .about-btn .video-btn i {
+  padding: 15px;
+  font-size: 0.9em;
+}
+.about-company .about-info .about-btn .video-text {
+  font-size: 1rem;
+  font-weight: 600;
+  display: none;
+  color: rgba(25, 25, 25, 0.7);
+}
+@media (min-width: 992px) {
+  .about-company .about-info .about-btn .video-text {
+    display: inline-block;
+  }
+}
