@@ -1,4 +1,4 @@
-
+/* 
 import './componens/Header'
 import Header from './componens/Header';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -28,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; */

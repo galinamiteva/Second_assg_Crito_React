@@ -22,7 +22,7 @@ const AboutCompany = () => {
 
             </div>
             <div className="about-info">
-                <h5 class ="about-red-text red-text">About Company</h5>
+                <h5 className ="about-red-text red-text">About Company</h5>
                 <h2 className="about-title title">We are Business Consulting Credit Repair Experts</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quod eius totam sapiente consequatur, veritatis veniam dolores eligendi aspernatur simil</p>
                 <p className="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quod eius totam sapiente consequatur, veritatis veniam dolores eligendi aspernatur simil </p>
