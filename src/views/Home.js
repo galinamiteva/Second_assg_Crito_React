@@ -3,7 +3,10 @@ import Header from '../componens/Header';
 import CompanyLogos from '../componens/CompanyLogos';
 import Features from '../componens/Features'
 import AboutCompany from '../componens/AboutCompany';
-//import Footer from '../componens/Footer';
+import OurService from '../componens/OurService';
+import Choose from '../componens/Choose';
+import Project from '../componens/Project'
+// import Footer from '../componens/Footer';
 
 
 const Home = () => {
@@ -15,9 +18,13 @@ const Home = () => {
         <CompanyLogos />    
         <Features /> 
         <AboutCompany/>
+        <OurService/>
+        <Choose/>
+        <Project/>
+
       </main>
        
-      {/*  <Footer/> */}
+       {/* <Footer/> */}
 
     </div>
   )
