@@ -6,7 +6,8 @@ import Justin from '../assets/images/Justin.png';
 import Cassandra from '../assets/images/CassandraW.png';
 import Amanda from '../assets/images/Amanda.png';
 import Jack from '../assets/images/JackMc.png';
-
+import Button from './Generics/Button';
+import MemberBox from '../componens/Generics/MemberBox';
 
 
 
@@ -17,7 +18,7 @@ const MeetTeam = () => {
     <div className="container">
 
         <div className="meet-team-title">
-            
+                   
              <div className= "meet-title">
                 <h5 className="red-text">Meet Our Team</h5>
                 <h2 className="title">Experience Team Members</h2>
@@ -26,11 +27,13 @@ const MeetTeam = () => {
             
 
             <div className="browse-button">                
-                <a href="/" className="button-beige">Browse Team <i className="fa-solid fa-arrow-up-right-dots"></i></a>
+               
+                <Button text = 'Browse Team' url='/service' theme = 'beige' />
             </div>        
             
             <div className="browse-button-mobile">                
-                <a href="/" className="button-beige">Browse Team <i className="fa-solid fa-arrow-up-right-dots"></i></a>
+               
+                <Button text = 'Browse Team' url='/service' theme = 'beige' />
             </div>               
           
             
@@ -40,30 +43,15 @@ const MeetTeam = () => {
     
         <div className="meet-team-members">
 
-            <div className="member">
-                <img src={Kristina} alt="bild of Kristine Palmer"/>
-                <h3 className="name">Kristine Palmer</h3>
-                <p className="job">Chef Operation Officer</p>               
+            
+           
+            <MemberBox img = {Kristina} altText= "bild of Kristine Palmer" name= "Kristine Palmer" description='Chef Operation Officer' />
+            <MemberBox  img={Mark} name='Mark Aubri' description='Senior Consultant' altText='Mark Aubri img'/>
+            <MemberBox  img={Kimberly} name='Kimberly Hansen' description='Senior Consultantr' altText='Kimberly Hansen img'/>
+            <MemberBox  img={Justin} name='Justin Willoman' description='Senior Tech Consultant' altText='Justin Willoman img'/>
 
-            </div>
-            <div className="member">
-                <img src={Mark} alt="bild of Mark Aubri"/>
-                <h3 className="name" >Mark Aubri</h3>
-                <p className="job">Senior Consultant</p>               
-
-            </div>
-            <div className="member">
-                <img src={Kimberly} alt="bild of Kimberly Hansen"/>
-                <h3 className="name">Kimberly Hansen</h3>
-                <p className="job" >Senior Consultant</p>               
-
-            </div>
-            <div className="member">
-                <img src={Justin} alt="bild of Justin Willoman"/>
-                <h3>Justin Willoman</h3>
-                <p className="job" >Senior Tech Consultant</p>                             
-            </div>
-                       
+ 
+                               
             
         </div>
 
