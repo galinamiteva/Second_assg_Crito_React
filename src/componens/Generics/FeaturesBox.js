@@ -1,16 +1,16 @@
 import React from 'react'
 
-const FeaturesBox = ({title, description, icon, url}) => {
+const FeaturesBox = ({title, description, icon, alt}) => {
   return (
 
     
-    <a className="feature-grid" href={url}>
+    <div className="feature-grid" alt={alt}>
         <div>
             <i className={icon}></i>
         </div>
         <h3>{title}</h3>
         <p>{description}</p>
-    </a>
+    </div>
   )
 }
 

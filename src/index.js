@@ -9,6 +9,8 @@ import Contact from './views/Contact';
 import News from './views/News';
 import NewsDetails from './views/NewsDetails';
 import NotFound from './views/NotFound';
+import Service from './views/Service';
+import Login from './views/Login';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +23,8 @@ root.render(
         <Route path='/news' element ={<News/>}/>
         <Route path='/news_details' element ={<NewsDetails/>}/>
         <Route path='/contact' element ={<Contact/>}/>
+        <Route path='/service' element ={<Service/>}/>
+        <Route path='/login' element ={<Login/>}/>
         <Route path='*' element ={<NotFound/>}/>
 
       </Routes>

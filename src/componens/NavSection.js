@@ -34,10 +34,7 @@ const NavSection = () => {
                         <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
                     </div>
 
-                           {/*  <i className="fa-brands fa-facebook"></i>
-                            <i className="fa-brands fa-twitter"></i>
-                            <i className="fa-brands fa-instagram"></i>
-                            <i className="fa-brands fa-linkedin"></i> */}
+                           
                     </div>
                 </div>
 
@@ -54,9 +51,8 @@ const NavSection = () => {
                   
                    <div className="login-btn">
                     
-                  {/*  <a href="#" class="button-yellow">Get Consulting<i class="fa-solid fa-arrow-up-right-dots"></i></a>
-                <a href="#" class="button-beige">Learn More<i class="fa-solid fa-arrow-up-right-dots"></i></a> */}
-                         <Button text = 'Login' url='/login' theme = 'button-yellow' />
+                  
+                         <Button text = 'Login' url='/login' theme = 'yellow' />
                         
                     </div>
                 </div> 

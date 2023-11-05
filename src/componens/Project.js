@@ -4,7 +4,7 @@ import glasses from '../assets/images/glasses.png';
 import notepad from '../assets/images/notepad.png';
 import laptop from '../assets/images/laptop.png';
 import ProjectBox from './Generics/ProjectBox';
-
+import Button from './Generics/Button';
 
 
 const Project = () => {
@@ -26,11 +26,11 @@ const Project = () => {
                         
 
         </div>
+       
 
         <div className="project-btn">
-            <a href="/" className="button-black">All Recent Projects
-                <i className="fa-solid fa-arrow-up-right-dots"></i>
-            </a>
+           
+            <Button text = 'All Recent Projects' url='/' theme = 'black' />
         </div> 
 
     </div>

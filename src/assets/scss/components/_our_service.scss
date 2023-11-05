@@ -84,7 +84,6 @@
 
 
         .flex-wrapper{
-
            
             display: none;
             justify-content: space-between;
@@ -92,17 +91,25 @@
             gap: 20px;
             margin: 50px auto;
 
+           
+
                 @media (min-width: 1200px) { 
                     display: flex;                          
                 }
 
+                
             .box{
                 
                 padding: 90px 30px 45px;
                 transition: all 0.3s ease-in-out;  
                 background-color: $colour-white;
              
-              
+                &:hover {
+                    background-color: $colour-yellow-btn;
+                    transition: 0.3s ease-in;
+                    box-shadow: 5px 9px 7px $colour-blur;
+                   
+                }
 
 
                 &::after{
@@ -128,29 +135,39 @@
                     margin-bottom: 25px;
                 }
 
-                .right-arrow{
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
+                .btn-arw-r {
 
-                    .arrow-icon{
-                        background-color: $colour-black-op90;
+                    text-decoration: none;
+                    padding: 15px 25px;
+                    font-weight: $font-weght-semiBold-600;
+                    text-align: right;
+                    font-size: 14px;
+
+
+                  
+                    @media (min-width: 992px) {
+                        font-size: 16px;
+                    }
+
+                    i {
+                        background-color: $colour-black;
                         color: $colour-white;
+                        padding: 20px;
+                        align-items: center;
+                        border: 1px solid $colour-black;
                         border-radius: 50%;
-                        padding: 10px 20px;
-                        transition: all 0.3s ease-in-out; 
-
+                        margin-left: 8px;
+                        margin-right: -15px;
+                        font-size: 0.9em;
+                        
+                        &:hover{
+                            background-color: $colour-white;
+                            color: $colour-black;
+                            transition: 0.3s;
+                        }
                     }
                 }
-
-                &:hover{
-                    background-color: $colour-yellow-btn;
-
-                    a{
-                        background-color: $colour-white;
-                        color: $colour-black-op90;
-                    }
-                }                    
+             
             
             }
         }
@@ -160,6 +177,7 @@
             justify-content: center;
             align-items: center;
             padding-bottom: 120px; 
+           
             
             @media (min-width:992px) {
                 justify-content: flex-start;

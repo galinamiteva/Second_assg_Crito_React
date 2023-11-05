@@ -1,24 +1,20 @@
-import React from 'react'
-
+/* import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Button = ({text, url, theme}) => {
   return (
-    <a href={url} className={theme}>
+    <Link to={url} className={theme}>
         {text}
         <i className="fa-solid fa-arrow-up-right-dots"></i>
       
-    </a>
+    </Link>
   )
 }
 
-export default Button 
+export default Button  */
+ 
 
-
-
-
-
-
-/* import React from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Button = ({theme, url, text}) => {
@@ -27,45 +23,20 @@ const Button = ({theme, url, text}) => {
         switch(theme) {
             case "yellow":
                 return 'button-yellow'
-
             case 'black':
                 return 'button-black'
-
-            case 'transparent':
+            case 'beige':
                 return 'button-beige'
             
             default:
-                return 'btn-transparent'
+                return 'button-beige'
         }
-
+ 
     }
-  return (
+  return (    
     <Link className={getButtonClassName()} to={url}>{text}<i className="fa-solid fa-arrow-up-right-dots"></i></Link>
-  )
+  
+    )
 }
-
-export default Button  */
-
-
-
-
-
-
-
-
-
-
-/* import React from 'react'
-import { NavLink } from 'react-router-dom' 
-
-const Button = ({text, url, theme}) => {
-  return (
-    <NavLink to={url} className={theme}>
-        {text}
-        <i className="fa-solid fa-arrow-up-right-dots"></i>
-      
-    </NavLink>
-  )
-}
-
-export default Button  */
+ 
+export default Button

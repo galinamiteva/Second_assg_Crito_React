@@ -5,7 +5,9 @@ import Features from '../componens/Features'
 import AboutCompany from '../componens/AboutCompany';
 import OurService from '../componens/OurService';
 import Choose from '../componens/Choose';
-import Project from '../componens/Project'
+import Project from '../componens/Project';
+import MeetTeam from '../componens/MeetTeam';
+
 // import Footer from '../componens/Footer';
 
 
@@ -21,7 +23,7 @@ const Home = () => {
         <OurService/>
         <Choose/>
         <Project/>
-
+        <MeetTeam/>
       </main>
        
        {/* <Footer/> */}

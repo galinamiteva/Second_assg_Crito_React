@@ -1,0 +1,131 @@
+.meet-our-team {
+
+    background-color: $colour-yellow-btn;
+
+    .container{
+        padding-top: 50px; //40px
+        padding-bottom: 12px;
+
+        @media (min-width:992px) {
+            padding-top: 100px;
+        }
+
+        .meet-team-title{
+            
+            padding-bottom: 90px;
+            
+            
+             @media (min-width:1200px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            } 
+            
+            h2 {
+                padding-bottom: 30px;
+            }
+
+
+            .browse-button{
+                display:none;
+
+                @media (min-width:1200px) {
+                    display: inline;  
+                } 
+            }
+
+            .browse-button-mobile{
+                display: flex;
+                justify-content: flex-start; 
+               
+                align-items: center;
+                text-align: center; 
+                width: 100%;                   
+                     
+
+                    @media (min-width:1200px) {
+                        display: none; 
+                        width: auto;
+                    } 
+
+                    .button-beige{
+                        
+                        width: 100%; 
+                                          
+                        @media (min-width: 992px) {
+                            width: auto;
+                            display: block;  
+                        }
+                    }  
+            }       
+          
+        }
+
+        .meet-team-members{
+
+            display:grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            column-gap: 10px;
+
+            @media (min-width:768px) {
+                grid-template-columns: 1fr 1fr;
+                               
+            }
+            @media (min-width:1200px) {
+                grid-template-columns: repeat(4, 1fr);
+               // max-width: 290px;               
+            }
+         
+
+            .member{
+
+                img{
+                    @media (min-width:1200px) {
+                        object-fit: cover;
+                        width: 271px;
+                        height: 371px;            
+                    }
+
+                    @media (min-width:1440px) {
+                        
+                        width: 308px;
+                        height: 420px;            
+                    }
+                }
+
+                h3{
+                    font-family: $font-dm-sants;
+                    font-weight: $font-weight-bold-700;
+                    font-size: 1.375rem;
+                    padding-top: 35px;
+                    padding-bottom: 10px;                    
+                }
+
+                p{
+                    font-size: 1rem;
+                    font-family: $font-inter;
+                    font-weight: $font-weight-regular-400;
+                    color: $colour-black-op70;
+                }
+            }
+        }
+        
+        .dots{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+             span{
+                margin: 0 0.2rem;
+                font-size: 60pt; 
+                color: $colour-black-op10;
+
+                &:hover{
+                    color: $colour-black
+                }
+            } 
+        }    
+
+    }  
+
+}

@@ -22,24 +22,18 @@ const services = [
                 <h5 className="red-text">Features</h5>            
                 <div className="feature-mobile">
                     <h2 className="features-title title">Our Accounting is trusted by thousand of companies</h2>
-                    {/* <a href="#" className="button-yellow">Learn More<i className="fa-solid fa-arrow-up-right-dots"></i></a> */}
-                    <Button text = 'Learn More' url='/services/consulting' theme = 'button-yellow' />
+                    
+                    <Button text = 'Learn More' url='/service' theme = 'yellow' />
 
                 </div>
             </div>
             <div className="features-aside">
 
-                {/* <a className="feature-grid" href='/services/businessadvice'>
-                    <div>
-                        <i className="fa-regular fa-handshake"></i>
-                    </div>
-                    <h3>Business Advice</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </a> */}
+              
 
                 {
                     services.map((service, index) =>(
-                        <FeaturesBox key= {index} title={service.title} icon={service.icon} description={service.description} url = {service.url} />
+                        <FeaturesBox key= {index} title={service.title} icon={service.icon} description={service.description} alt = {service.alt} />
                     )) 
                 }
 

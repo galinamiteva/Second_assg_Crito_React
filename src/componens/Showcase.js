@@ -15,15 +15,11 @@ const Showcase = () => {
                     <h6 className="showcase-paragraph">Establish your vision and value proposition and turn them into testable prototypes</h6>
                     <div className="showcase-btn">
                      
-                        <Button text = 'Get Consulting' url='/services' theme = 'button-yellow'/>
+                        <Button text = 'Get Consulting' url='/service' theme = 'yellow'/>
  
-                      {/*   <div className="our-service-btn">
-            <a href="/" className="button-beige">Browse Services
-                <i className="fa-solid fa-arrow-up-right-dots"></i>
-            </a>
-        </div> */}
+                
                        
-                       <Button text = 'Learn More' url='/services' theme = 'button-beige'/>
+                       <Button text = 'Learn More' url='/service' theme = 'beige'/>
                     </div>
                 </div>
                 <div className="showcase-img">

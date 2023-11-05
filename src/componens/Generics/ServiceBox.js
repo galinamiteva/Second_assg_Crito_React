@@ -7,8 +7,10 @@ const ServiceBox = ({title, description, url}) => {
                                 
         <h3>{title}</h3>
         <p>{description}</p>
-        <div className="right-arrow">
-            <div className='arrow-icon' ><i className="fa-solid fa-arrow-right"></i></div>
+         
+
+        <div className="btn-arw-r">
+          <i className="fa-solid fa-arrow-right"></i>
         </div>
     </Link>
   )

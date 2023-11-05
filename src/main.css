@@ -622,6 +622,11 @@ h2.title {
   transition: all 0.3s ease-in-out;
   background-color: #FFFFFF;
 }
+.our-service .container .flex-wrapper .box:hover {
+  background-color: #F9D783;
+  transition: 0.3s ease-in;
+  box-shadow: 5px 9px 7px #707070;
+}
 .our-service .container .flex-wrapper .box::after {
   content: "";
   position: absolute;
@@ -640,24 +645,33 @@ h2.title {
   margin-top: 18px;
   margin-bottom: 25px;
 }
-.our-service .container .flex-wrapper .box .right-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.our-service .container .flex-wrapper .box .btn-arw-r {
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: right;
+  font-size: 14px;
 }
-.our-service .container .flex-wrapper .box .right-arrow .arrow-icon {
-  background-color: rgba(25, 25, 25, 0.9);
+@media (min-width: 992px) {
+  .our-service .container .flex-wrapper .box .btn-arw-r {
+    font-size: 16px;
+  }
+}
+.our-service .container .flex-wrapper .box .btn-arw-r i {
+  background-color: #191919;
   color: #FFFFFF;
+  padding: 20px;
+  align-items: center;
+  border: 1px solid #191919;
   border-radius: 50%;
-  padding: 10px 20px;
-  transition: all 0.3s ease-in-out;
+  margin-left: 8px;
+  margin-right: -15px;
+  font-size: 0.9em;
 }
-.our-service .container .flex-wrapper .box:hover {
-  background-color: #F9D783;
-}
-.our-service .container .flex-wrapper .box:hover a {
+.our-service .container .flex-wrapper .box .btn-arw-r i:hover {
   background-color: #FFFFFF;
-  color: rgba(25, 25, 25, 0.9);
+  color: #191919;
+  transition: 0.3s;
 }
 .our-service .container .our-service-btn {
   display: flex;
@@ -885,4 +899,117 @@ h2.title {
   .project .container .project-btn .button-black {
     width: auto;
   }
+}
+
+.meet-our-team {
+  background-color: #F9D783;
+}
+.meet-our-team .container {
+  padding-top: 50px;
+  padding-bottom: 12px;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container {
+    padding-top: 100px;
+  }
+}
+.meet-our-team .container .meet-team-title {
+  padding-bottom: 90px;
+}
+@media (min-width: 1200px) {
+  .meet-our-team .container .meet-team-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.meet-our-team .container .meet-team-title h2 {
+  padding-bottom: 30px;
+}
+.meet-our-team .container .meet-team-title .browse-button {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .meet-our-team .container .meet-team-title .browse-button {
+    display: inline;
+  }
+}
+.meet-our-team .container .meet-team-title .browse-button-mobile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .meet-our-team .container .meet-team-title .browse-button-mobile {
+    display: none;
+    width: auto;
+  }
+}
+.meet-our-team .container .meet-team-title .browse-button-mobile .button-beige {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .meet-team-title .browse-button-mobile .button-beige {
+    width: auto;
+    display: block;
+  }
+}
+.meet-our-team .container .meet-team-members {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media (min-width: 768px) {
+  .meet-our-team .container .meet-team-members {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .meet-our-team .container .meet-team-members {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .meet-our-team .container .meet-team-members .member img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 271px;
+    height: 371px;
+  }
+}
+@media (min-width: 1440px) {
+  .meet-our-team .container .meet-team-members .member img {
+    width: 308px;
+    height: 420px;
+  }
+}
+.meet-our-team .container .meet-team-members .member h3 {
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.375rem;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+.meet-our-team .container .meet-team-members .member p {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(25, 25, 25, 0.7);
+}
+.meet-our-team .container .dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.meet-our-team .container .dots span {
+  margin: 0 0.2rem;
+  font-size: 60pt;
+  color: rgba(25, 25, 25, 0.1);
+}
+.meet-our-team .container .dots span:hover {
+  color: #191919;
 }
