@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from '../componens/Header';
+// import NavSection from '../componens/NavSection';
+import Showcase from '../componens/Showcase';
 import CompanyLogos from '../componens/CompanyLogos';
 import Features from '../componens/Features'
 import AboutCompany from '../componens/AboutCompany';
@@ -8,15 +9,21 @@ import Choose from '../componens/Choose';
 import Project from '../componens/Project';
 import MeetTeam from '../componens/MeetTeam';
 
+import { useLocation } from 'react-router-dom';
+
 // import Footer from '../componens/Footer';
 
 
 const Home = () => {
+  const location=useLocation()
+
   return (
     <div className='wrapper' >
-      <Header/>
+     {/*  <NavSection/> */}
       
       <main>
+        <p>useLocation:{location.pathname}</p> {/* !!!!!!!!!!!!!!!!!!! ???????????*/}
+        <Showcase/>
         <CompanyLogos />    
         <Features /> 
         <AboutCompany/>

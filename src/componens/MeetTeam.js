@@ -1,19 +1,30 @@
 import React from 'react'
+import Kristina from '../assets/images/Kristina.png';
+import Mark from '../assets/images/Mark.png';
+import Kimberly from '../assets/images/Kimberly.png';
+import Justin from '../assets/images/Justin.png';
+import Cassandra from '../assets/images/CassandraW.png';
+import Amanda from '../assets/images/Amanda.png';
+import Jack from '../assets/images/JackMc.png';
+
+
+
 
 const MeetTeam = () => {
   return (
-
-<section className="meet-our-team">
+    <section className="meet-our-team">
 
     <div className="container">
 
         <div className="meet-team-title">
             
-            <div meet-title>
+             <div className= "meet-title">
                 <h5 className="red-text">Meet Our Team</h5>
                 <h2 className="title">Experience Team Members</h2>
-            </div>
+            </div> 
             
+            
+
             <div className="browse-button">                
                 <a href="/" className="button-beige">Browse Team <i className="fa-solid fa-arrow-up-right-dots"></i></a>
             </div>        
@@ -30,25 +41,25 @@ const MeetTeam = () => {
         <div className="meet-team-members">
 
             <div className="member">
-                <img src="./images/Kristina.png" alt="bild of Kristine Palmer"/>
+                <img src={Kristina} alt="bild of Kristine Palmer"/>
                 <h3 className="name">Kristine Palmer</h3>
                 <p className="job">Chef Operation Officer</p>               
 
             </div>
             <div className="member">
-                <img src="./images/Mark.png" alt="bild of Mark Aubri"/>
+                <img src={Mark} alt="bild of Mark Aubri"/>
                 <h3 className="name" >Mark Aubri</h3>
                 <p className="job">Senior Consultant</p>               
 
             </div>
             <div className="member">
-                <img src="./images/Kimberly.png" alt="bild of Kimberly Hansen"/>
+                <img src={Kimberly} alt="bild of Kimberly Hansen"/>
                 <h3 className="name">Kimberly Hansen</h3>
                 <p className="job" >Senior Consultant</p>               
 
             </div>
             <div className="member">
-                <img src="./images/Justin.png" alt="bild of Justin Willoman"/>
+                <img src={Justin} alt="bild of Justin Willoman"/>
                 <h3>Justin Willoman</h3>
                 <p className="job" >Senior Tech Consultant</p>                             
             </div>
@@ -89,7 +100,7 @@ const MeetTeam = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque suscipit ea similique rerum, voluptatibus ad expedita nulla sapiente doloremque, quam iste minus?</p>
                     
                         <div className="client">
-                            <div className="client-img"><img src="./images/CassandraW.png" alt="Cassandra Warren"/></div>
+                            <div className="client-img"><img src={Cassandra} alt="Cassandra Warren"/></div>
                             <div className="client-info">
                                 <h3 className="name">Cassandra Warren</h3>    
                                 <p className="title-red red-text">Business Manager, Dorfus</p> 
@@ -109,7 +120,7 @@ const MeetTeam = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque suscipit ea similique rerum, voluptatibus ad expedita nulla sapiente doloremque, quam iste minus?</p>
                     
                         <div className="client">
-                            <div className="client-img"><img src="./images/Amanda.png" alt="Amanda Tulling"/></div>
+                            <div className="client-img"><img src={Amanda} alt="Amanda Tulling"/></div>
                             <div className="client-info">
                                 <h3 className="name">Amanda Tulling</h3>    
                                 <p className="title-red red-text">Senior Developer, Square</p> 
@@ -129,7 +140,7 @@ const MeetTeam = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque suscipit ea similique rerum, voluptatibus ad expedita nulla sapiente doloremque, quam iste minus?</p>
                     
                         <div className="client">
-                            <div className="client-img"><img src="./images/JackMc.png" alt=" Jack McDogglas"/></div>
+                            <div className="client-img"><img src={Jack} alt=" Jack McDogglas"/></div>
                             <div className="client-info">
                                 <h3 className="name">Jack McDogglas</h3>    
                                 <p className="title-red red-text">Key Account Manager, Gobona</p> 
@@ -147,6 +158,7 @@ const MeetTeam = () => {
     </div>
 
 </section>
+
   )
 }
 
