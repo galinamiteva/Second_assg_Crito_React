@@ -8,6 +8,7 @@ import Amanda from '../assets/images/Amanda.png';
 import Jack from '../assets/images/JackMc.png';
 import Button from './Generics/Button';
 import MemberBox from '../componens/Generics/MemberBox';
+import Testimonial from './Generics/Testimonial';
 
 
 
@@ -76,65 +77,9 @@ const MeetTeam = () => {
             
                 <div className="container">
 
-                    <div className="flex-box">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque suscipit ea similique rerum, voluptatibus ad expedita nulla sapiente doloremque, quam iste minus?</p>
-                    
-                        <div className="client">
-                            <div className="client-img"><img src={Cassandra} alt="Cassandra Warren"/></div>
-                            <div className="client-info">
-                                <h3 className="name">Cassandra Warren</h3>    
-                                <p className="title-red red-text">Business Manager, Dorfus</p> 
-                            </div>                  
-                        </div>
-                    </div>
-
-                    <div className="flex-box">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque suscipit ea similique rerum, voluptatibus ad expedita nulla sapiente doloremque, quam iste minus?</p>
-                    
-                        <div className="client">
-                            <div className="client-img"><img src={Amanda} alt="Amanda Tulling"/></div>
-                            <div className="client-info">
-                                <h3 className="name">Amanda Tulling</h3>    
-                                <p className="title-red red-text">Senior Developer, Square</p> 
-                            </div>                  
-                        </div>
-                    </div>            
-
-                    <div className="flex-box">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque suscipit ea similique rerum, voluptatibus ad expedita nulla sapiente doloremque, quam iste minus?</p>
-                    
-                        <div className="client">
-                            <div className="client-img"><img src={Jack} alt=" Jack McDogglas"/></div>
-                            <div className="client-info">
-                                <h3 className="name">Jack McDogglas</h3>    
-                                <p className="title-red red-text">Key Account Manager, Gobona</p> 
-                            </div>                  
-                        </div>
-                    </div>
+                    <Testimonial img={Cassandra} name="Cassandra Warren" jobTitle="Business Manager, Dorfus" />
+                    <Testimonial img={Amanda} name="Amanda Tulling" jobTitle="Senior Developer, Square" />
+                    <Testimonial img={Jack} name="Jack McDogglas" jobTitle="Key Account Manager, Gobona" />               
 
                 </div>
 
