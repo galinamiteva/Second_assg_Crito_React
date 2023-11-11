@@ -10,6 +10,7 @@ import NotFound from './views/NotFound';
 import Service from './views/Service';
 import Login from './views/Login';
 import NavSection from './componens/NavSection';
+//import Header from './componens/Header';
 /* import AutoScrollToTop from './componens/Generics/AutoScrollToTop';
 import ScrollToTop from './componens/Generics/ScrollToTop';
 

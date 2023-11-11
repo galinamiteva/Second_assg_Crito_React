@@ -9,20 +9,20 @@ import Choose from '../componens/Choose';
 import Project from '../componens/Project';
 import MeetTeam from '../componens/MeetTeam';
 
-import { useLocation } from 'react-router-dom';
+//import { useLocation } from 'react-router-dom';
 
 // import Footer from '../componens/Footer';
 
 
 const Home = () => {
-  const location=useLocation()
+  //const location=useLocation()
 
   return (
     <div className='wrapper' >
      {/*  <NavSection/> */}
       
       <main>
-        <p>useLocation:{location.pathname}</p> {/* !!!!!!!!!!!!!!!!!!! ???????????*/}
+       {/*  <p>useLocation:{location.pathname}</p>  !!!!!!!!!!!!!!!!!!! ???????????**/}
         <Showcase/>
         <CompanyLogos />    
         <Features /> 
