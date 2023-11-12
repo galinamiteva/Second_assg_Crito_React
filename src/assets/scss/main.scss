@@ -4,7 +4,9 @@
 @import './core/base';
 @import './core/typography';
 @import './core/utilities';
-/* @import './core/mobile_nav'; */
+@import './core/footer';
+
+    
 
 
 @import './components/navigation';
@@ -15,8 +17,8 @@
 @import './components/our_service';
 @import './components/choose';
 @import './components/project';
-@import './components/meet_team'
- 
+@import './components/meet_team';
+//@import './components/errorPage';
 
 // @import './components/footer';
 

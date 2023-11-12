@@ -6,23 +6,23 @@ import Home from './views/Home';
 import Contact from './views/Contact';
 import News from './views/News';
 import NewsDetails from './views/NewsDetails';
-import NotFound from './views/NotFound';
+
 import Service from './views/Service';
 import Login from './views/Login';
+import NotFound from './views/NotFound/NotFound';
 import NavSection from './componens/NavSection';
-//import Header from './componens/Header';
-/* import AutoScrollToTop from './componens/Generics/AutoScrollToTop';
+import AutoScrollToTop from './componens/Generics/AutoScrollToTop';
 import ScrollToTop from './componens/Generics/ScrollToTop';
 
- */
+
 
 
 const App = () => {
   return (
   <>
 
-   {/*  <AutoScrollToTop/>
-    <ScrollToTop/>  */}
+    <AutoScrollToTop/>
+    <ScrollToTop/>        
     <NavSection/>
     <Routes>
       <Route path='/' element ={<Home/>}/>
@@ -32,8 +32,8 @@ const App = () => {
       <Route path='/contact' element ={<Contact/>}/>
       <Route path='/service' element ={<Service/>}/>
       <Route path='/login' element ={<Login/>}/>
-      <Route path='*' element ={<NotFound/>}/>
-
+     <Route path='*' element ={<NotFound/>}/>
+  
     </Routes>
   </>
    
