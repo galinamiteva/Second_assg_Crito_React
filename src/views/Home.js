@@ -28,9 +28,10 @@ const Home = () => {
         <Choose/>
         <Project/>
         <MeetTeam/>
+        
       </main>
        
-       {/* <Footer/> */}
+       <Footer/>
 
     </div>
   )
