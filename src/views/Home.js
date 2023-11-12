@@ -9,6 +9,7 @@ import Choose from '../componens/Choose';
 import Project from '../componens/Project';
 import MeetTeam from '../componens/MeetTeam';
 import Footer from '../componens/Footer';
+import ArticleNews from '../componens/ArticleNews';
 
 
 const Home = () => {
@@ -28,7 +29,8 @@ const Home = () => {
         <Choose/>
         <Project/>
         <MeetTeam/>
-        
+        <ArticleNews/>
+
       </main>
        
        <Footer/>
