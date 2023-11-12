@@ -8,8 +8,8 @@ import News from './views/News';
 import NewsDetails from './views/NewsDetails';
 
 import Service from './views/Service';
-import Login from './views/Login';
-import NotFound from './views/NotFound/NotFound';
+import Login from './views/Login'; 
+import NotFoundPage from './views/NotFoundPage';
 import NavSection from './componens/NavSection';
 import AutoScrollToTop from './componens/Generics/AutoScrollToTop';
 import ScrollToTop from './componens/Generics/ScrollToTop';
@@ -32,8 +32,9 @@ const App = () => {
       <Route path='/contact' element ={<Contact/>}/>
       <Route path='/service' element ={<Service/>}/>
       <Route path='/login' element ={<Login/>}/>
-     <Route path='*' element ={<NotFound/>}/>
-  
+     
+     
+     <Route path='*' element ={<NotFoundPage/>}/> 
     </Routes>
   </>
    
