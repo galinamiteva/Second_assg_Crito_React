@@ -1,6 +1,7 @@
 import React from 'react'
 
 const FeaturesBox = ({title, description, icon, alt}) => {
+  
   return (
 
     

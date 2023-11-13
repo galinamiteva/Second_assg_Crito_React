@@ -3,16 +3,12 @@ import smile_25mar from '../assets/images/Smile_25_mar.png';
 import article_17mar from '../assets/images/article_17_mar.png';
 import book_13mar from '../assets/images/Book_13mar.png';
 import Button from './Generics/Button';
+import ArticleBox from './Generics/ArticleBox';
 
 
 const ArticleNews = () => {
 
-    const artcles =  [
-        {title:"How To Use Digitalization In The Classroom", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure" , url:"/service", img: {smile_25mar}},
-        {title:"How To Implement ChatGpt In Your Projects", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure" , url:"/service", img: {article_17mar}},
-        {title:"How Guide To Support Modern CSS Design", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure" , url:"/service", img: {book_13mar}}
-       
-    ]    
+   
     
     
   return (
@@ -33,47 +29,11 @@ const ArticleNews = () => {
                 
             <div className="article-content">
 
-                {/* <div className="content-box">
-                    <div className="article-img">
+                <ArticleBox title="How To Use Digitalization In The Classroom" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure"  url="/news_details" alt="smiling woman" img= {smile_25mar} />
+                <ArticleBox title="How To Implement ChatGpt In Your Projects" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure"  url="/news_details" alt="ChatGpt:s page" img= {article_17mar} />
+                <ArticleBox title="How Guide To Support Modern CSS Design" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure"  url="/news_details" alt="CSS books" img= {book_13mar} />
 
-                    <img src={smile_25mar} alt="smiling woman "/>
-                    </div>
-    
-                    <div className="business-text">
-                        <p>Business</p>
-                        <h3>How To Use Digitalization In The Classroom</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure</p>
-                    </div>
-
-                </div> */}
-
-                <div className="content-box">
-                    <div className="article-img">
-                        
-                        <img src={article_17mar} alt="ChatGpt:s page  "/>
-                    </div>
-    
-                    <div className="business-text">
-                        <p>Business</p>
-                        <h3>How To Implement ChatGpt In Your Projects</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure</p>
-                    </div>
-
-                </div>
-
-                <div className="content-box">
-                    <div className="article-img">
-                        <img src={book_13mar} alt="CSS books"/>
-                    </div>
-    
-                    <div className="business-text">
-                        <p>Business</p>
-                        <h3>How Guide To Support Modern CSS Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure</p>
-                    </div>
-
-                </div> 
-
+           
                 
             </div>
             

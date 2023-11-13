@@ -1,0 +1,75 @@
+.news-form {
+    margin-top: 160px; 
+    background-color: $colour-beige;
+    padding-top: 115px; //100 Adobe
+    padding-bottom: 115px;
+    position: relative;
+    
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        display: none;
+
+        @media (min-width:1320px) {
+            display: inline-block;
+        }
+        
+    }
+
+    .container{
+
+        h2{
+            margin-bottom: 20px;
+        }
+        
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        
+        @media (min-width:992px) {
+            display: flex;
+        }
+
+        form {
+            .signup-input{
+                
+                border:none;
+                padding:15px 50px 10px 30px;
+                width: 100%;
+                border-radius: 25px;
+                margin-right: 10px;
+                text-align: center;
+                margin-bottom: 20px;    
+                
+                @media (min-width:992px) {
+                    padding:15px 50px 10px 30px;
+                    width: auto;
+                }
+
+            }
+
+            .button-yellow{
+                           
+                text-align: center;
+                width: 100%;
+               
+                @media (min-width:992px) {
+                            
+                    padding: 15px 30px 10px;
+                    width: 296px;
+                    display: inline-block;
+                }
+
+                @media (min-width:1200px) {
+                            
+                    
+                    width: auto;
+                   
+                }
+
+            }
+        }
+    }
+    
+}

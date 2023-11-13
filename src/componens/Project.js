@@ -18,11 +18,10 @@ const Project = () => {
 
         <div className="project-grid">
 
-            <ProjectBox img = {newspaper} altText= "a man who reads a newspaper" title= "Grow Your Business" url="/"/>
-            <ProjectBox img = {glasses} altText= "glasses, an ipad and a phone" title= "Why your client needs a responsive website" url="/"/>
-            <ProjectBox img = {notepad} altText= "a cup and notepad" title= "Why your client needs a responsive website" url="/" />
-            <ProjectBox img = {laptop} altText= "a man who reads a newspaper" />
-
+            <ProjectBox img = {newspaper} altText= "a man who reads a newspaper" title= "Grow Your Business" url="/news"/>
+            <ProjectBox img = {glasses} altText= "glasses, an ipad and a phone" title= "Why your client needs a responsive website" url="/news"/>
+            <ProjectBox img = {notepad} altText= "a cup and notepad" title= "Why your client needs a responsive website" url="/news" />
+            <ProjectBox img = {laptop} altText= "a laptop shows charts" title= "Business Insights is a important piece of your business" url="/news"/>
                         
 
         </div>

@@ -10,6 +10,7 @@ import Project from '../componens/Project';
 import MeetTeam from '../componens/MeetTeam';
 import Footer from '../componens/Footer';
 import ArticleNews from '../componens/ArticleNews';
+import GetNews from '../componens/GetNews';
 
 
 const Home = () => {
@@ -30,6 +31,8 @@ const Home = () => {
         <Project/>
         <MeetTeam/>
         <ArticleNews/>
+        <GetNews/>
+
 
       </main>
        

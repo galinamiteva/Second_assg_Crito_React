@@ -1,22 +1,48 @@
-import React from 'react'
+/* import React from 'react'
 
 const ArticleBox = ({title, description, img, alt}) => {
 
   return (
     <div className="content-box">
-                    <div className="article-img">
+      <div className="article-img">
 
-                    <img src={img} alt={alt}/>
-                    </div>
+        <img src={img} alt={alt}/>
+      </div>
     
-                    <div className="business-text">
-                        <p>Business</p>
-                        <h3>{title}</h3>
-                        <p>{description}</p>
-                    </div>
+      <div className="business-text">
+          <p>Business</p>
+          <h3>{title}</h3>
+          <p>{description}</p>
+      </div>
 
-                </div>
+    </div>
   )
 }
 
-export default ArticleBox
+export default ArticleBox 
+ */
+
+import React from 'react'
+import {Link} from 'react-router-dom';
+
+
+const ArticleBox = ({title, description, img, alt, url}) => {
+
+  return (
+    <Link className="content-box" to= {url}>
+      <div className="article-img">
+
+        <img src={img} alt={alt}/>
+      </div>
+    
+      <div className="business-text">
+          <p>Business</p>
+          <h3>{title}</h3>
+          <p>{description}</p>
+      </div>
+
+    </Link>
+  )
+} 
+
+export default ArticleBox  

@@ -28,10 +28,7 @@ const NavSection = () => {
 
         <Link to='/'> <img src={companyLogo} alt="company-Crito-logo" className="logo"/></Link>
          
-           {/*  <i className="fa-solid fa-bars"></i> */}
-
-
-
+           
                 <nav className="navigation-bar">
                     <div className="upper-info">
                         <div className="business-info">
