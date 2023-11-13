@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../componens/Footer'
 import BreadCum from '../componens/BreadCum'
+import CompanyContact from '../componens/CompanyContact'
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
 
         <BreadCum  title="Let&#39;s Connect"/>     
         <main>
-          
+          <CompanyContact/>
         </main>
         <Footer/>
           {/* <main>
