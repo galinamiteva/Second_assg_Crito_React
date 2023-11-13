@@ -1412,15 +1412,7 @@ footer .footer-down .container .social-media {
 .article .container .article-title h2 {
   padding-bottom: 30px;
 }
-.article .container .article-title #article-button {
-  display: none;
-}
-@media (min-width: 1200px) {
-  .article .container .article-title #article-button {
-    display: inline;
-  }
-}
-.article .container .article-title #button-mobile {
+.article .container .article-title .button-beige {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1428,18 +1420,9 @@ footer .footer-down .container .social-media {
   width: 100%;
 }
 @media (min-width: 1200px) {
-  .article .container .article-title #button-mobile {
-    display: none;
+  .article .container .article-title .button-beige {
+    display: inline;
     width: auto;
-  }
-}
-.article .container .article-title #button-mobile .button-beige {
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .article .container .article-title #button-mobile .button-beige {
-    width: auto;
-    display: block;
   }
 }
 .article .container .article-content {

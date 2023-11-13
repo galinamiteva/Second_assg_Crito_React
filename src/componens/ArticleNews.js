@@ -9,38 +9,30 @@ const ArticleNews = () => {
 
     
   return (
-    <section class="article">
-        <div class="container">
+    <section className="article">
+        <div className="container">
 
 
-            <div class="article-title">
-                <div class="container-title">                
-                    <h5 class="red-text">Article & News</h5>
-                    <h2 class="title"> Get Every Single Articles & News </h2>
-                </div>
+            <div className="article-title">
+                <div className="container-title">                
+                    <h5 className="red-text">Article & News</h5>
+                    <h2 className="title"> Get Every Single Articles & News </h2>
+                </div>                 
 
-                {/* <div class="article-button">            
-                    <a href="/" class="button-beige">Browse Articles <i class="fa-solid fa-arrow-up-right-dots"></i></a>
-                </div> */}
-
-                <Button text = 'Browse Articles' url='/news' theme = 'beige'  id='article-button'/>
-
-                <Button text = 'Browse Articles' url='/news' theme = 'beige' id='button-mobile'/>
-                {/* <div class="article-button-mobile">            
-                    <a href="/" class="button-beige">Browse Articles <i class="fa-solid fa-arrow-up-right-dots"></i></a>
-                </div> */}
+                <Button text = 'Browse Articles' url='/news' theme = 'beige' />
+               
                 
             </div>        
                 
-            <div class="article-content">
+            <div className="article-content">
 
-                <div class="content-box">
-                    <div class="article-img">
+                <div className="content-box">
+                    <div className="article-img">
 
                     <img src={smile_25mar} alt="smiling woman "/>
                     </div>
     
-                    <div class="business-text">
+                    <div className="business-text">
                         <p>Business</p>
                         <h3>How To Use Digitalization In The Classroom</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure</p>
@@ -48,13 +40,13 @@ const ArticleNews = () => {
 
                 </div>
 
-                <div class="content-box">
-                    <div class="article-img">
+                <div className="content-box">
+                    <div className="article-img">
                         
                         <img src={article_17mar} alt="ChatGpt:s page  "/>
                     </div>
     
-                    <div class="business-text">
+                    <div className="business-text">
                         <p>Business</p>
                         <h3>How To Implement ChatGpt In Your Projects</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure</p>
@@ -62,12 +54,12 @@ const ArticleNews = () => {
 
                 </div>
 
-                <div class="content-box">
-                    <div class="article-img">
+                <div className="content-box">
+                    <div className="article-img">
                         <img src={book_13mar} alt="CSS books"/>
                     </div>
     
-                    <div class="business-text">
+                    <div className="business-text">
                         <p>Business</p>
                         <h3>How Guide To Support Modern CSS Design</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure</p>
@@ -78,7 +70,7 @@ const ArticleNews = () => {
                 
             </div>
             
-            <div class="dots">
+            <div className="dots">
                 <span>.</span>
                 <span>.</span>
                 <span>.</span>
