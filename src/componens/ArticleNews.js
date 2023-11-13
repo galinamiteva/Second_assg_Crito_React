@@ -7,6 +7,13 @@ import Button from './Generics/Button';
 
 const ArticleNews = () => {
 
+    const artcles =  [
+        {title:"How To Use Digitalization In The Classroom", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure" , url:"/service", img: {smile_25mar}},
+        {title:"How To Implement ChatGpt In Your Projects", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure" , url:"/service", img: {article_17mar}},
+        {title:"How Guide To Support Modern CSS Design", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure" , url:"/service", img: {book_13mar}}
+       
+    ]    
+    
     
   return (
     <section className="article">
@@ -26,7 +33,7 @@ const ArticleNews = () => {
                 
             <div className="article-content">
 
-                <div className="content-box">
+                {/* <div className="content-box">
                     <div className="article-img">
 
                     <img src={smile_25mar} alt="smiling woman "/>
@@ -38,7 +45,7 @@ const ArticleNews = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis iure</p>
                     </div>
 
-                </div>
+                </div> */}
 
                 <div className="content-box">
                     <div className="article-img">

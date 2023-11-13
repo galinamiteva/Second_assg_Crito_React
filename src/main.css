@@ -1419,7 +1419,7 @@ footer .footer-down .container .social-media {
   text-align: center;
   width: 100%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .article .container .article-title .button-beige {
     display: inline;
     width: auto;
