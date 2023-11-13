@@ -2,6 +2,8 @@ import React from 'react';
 import smile_25mar from '../assets/images/Smile_25_mar.png';
 import article_17mar from '../assets/images/article_17_mar.png';
 import book_13mar from '../assets/images/Book_13mar.png';
+import Button from './Generics/Button';
+
 
 const ArticleNews = () => {
 
@@ -17,15 +19,18 @@ const ArticleNews = () => {
                     <h2 class="title"> Get Every Single Articles & News </h2>
                 </div>
 
-                <div class="article-button">            
+                {/* <div class="article-button">            
                     <a href="/" class="button-beige">Browse Articles <i class="fa-solid fa-arrow-up-right-dots"></i></a>
-                </div>
-                <div class="article-button-mobile">            
+                </div> */}
+
+                <Button text = 'Browse Articles' url='/news' theme = 'beige'  id='article-button'/>
+
+                <Button text = 'Browse Articles' url='/news' theme = 'beige' id='button-mobile'/>
+                {/* <div class="article-button-mobile">            
                     <a href="/" class="button-beige">Browse Articles <i class="fa-solid fa-arrow-up-right-dots"></i></a>
-                </div>
+                </div> */}
                 
-            </div>
-        
+            </div>        
                 
             <div class="article-content">
 

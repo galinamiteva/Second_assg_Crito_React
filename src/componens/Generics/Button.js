@@ -27,7 +27,8 @@ const Button = ({theme, url, text}) => {
                 return 'button-black'
             case 'beige':
                 return 'button-beige'
-            
+               
+                
             default:
                 return 'button-beige'
         }

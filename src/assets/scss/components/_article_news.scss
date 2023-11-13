@@ -19,7 +19,7 @@
                 }
 
 
-            .article-button{
+            #article-button{
                 display:none;
 
                 @media (min-width:1200px) {
@@ -27,7 +27,7 @@
                 } 
             }
             
-            .article-button-mobile{
+            #button-mobile{
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
