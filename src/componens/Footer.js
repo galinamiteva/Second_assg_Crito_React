@@ -1,9 +1,18 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import backgr_lines_wh from '../assets/images/background-lines-right.svg';
 import logo_white from '../assets/images/logotype-white.svg';
 
 
+
+
+
+
 const Footer = () => {
+
+
+
     return (
       <footer  className="footer">
           <div className="footer-upp">
@@ -11,16 +20,16 @@ const Footer = () => {
               
               <div className="container">
                   
-                  <div className="company-info">
-                      
-                          <img src={logo_white} alt="company-Crito-logo"/>
-  
+                  <div className="company-info">                      
+                        
+                          
+                         <Link to='/' > <img src={logo_white} alt="company-Crito-logo" className="logo"/></Link>
                           <p className="company-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, fuga nesciunt sapiente exercitationem nostrum reiciendis ullam. Maiores sapiente tempore tempora.</p>
                   </div>
                   
                   <div className="contact-box">
                       <p className="box-head">Company</p>
-                      {/* LINK!!!! */}
+                      {/* LINK? */}
                       <a href="/">About</a>
                       <a href="/">Feature</a>
                       <a href="/">Works</a>
@@ -61,11 +70,12 @@ const Footer = () => {
                       <p> &#169; 2023 Crito - Consulting Company Inc. All Right Reserved.</p>
                   </div>
   
-                  <div className="social-media">
-                      <i className="fa-brands fa-facebook"></i>
-                      <i className="fa-brands fa-twitter"></i>
-                      <i className="fa-brands fa-instagram"></i>
-                      <i className="fa-brands fa-linkedin"></i>
+                  <div className="social-media">                    
+
+                    <a href="https://facebook.com" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noreferrer"><i className="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
                   </div>
               
               </div>

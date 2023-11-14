@@ -1,17 +1,4 @@
-/* import React from 'react'
-import { Link } from 'react-router-dom';
 
-const Button = ({text, url, theme}) => {
-  return (
-    <Link to={url} className={theme}>
-        {text}
-        <i className="fa-solid fa-arrow-up-right-dots"></i>
-      
-    </Link>
-  )
-}
-
-export default Button  */
  
 
 import React from 'react'

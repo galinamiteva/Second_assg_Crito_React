@@ -12,7 +12,7 @@
         align-items: center;
         justify-content: space-between;
 
-            .scroll-to-top{   /* !!!!!!!!!!!!!!!!!!!!! */
+            .scroll-to-top{   
                 position: fixed;
                 bottom: 50px;
                 right: 30px;
@@ -20,7 +20,7 @@
                 width: 40px;
             }
             .hide{
-                display: none;   /* !!!!!!!!!!!!!!!!!!!!! */
+                display: none;   
             }
       
             .logo{
@@ -162,7 +162,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
+            z-index: 2;  //z-index :1 bread cum
             background-color: $colour-yellow-btn;
             display: flex;
             flex-direction: column;

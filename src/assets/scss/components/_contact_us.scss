@@ -1,0 +1,47 @@
+.contact-us{
+    padding-bottom: 120px;
+   
+    .container{
+        background-color: $colour-beige;
+        text-align: center;
+        padding-bottom: 130px;
+        padding-top:100px;
+
+        .content-box{
+            display: flex;
+            flex-direction: column;
+            
+            @media (min-width:992px) {
+                margin: 0 150px;
+            }
+
+            h2{
+                margin-bottom: 30px;
+            }
+
+
+            input, textarea{
+                border:none;
+                border-radius: 25px;
+                height: 56px;
+                margin-bottom: 15px;
+                padding-left: 20px;
+                
+                &#message{
+                    padding-top: 15px;
+                    height: 160px;
+                    padding-bottom: 45px;
+                }
+
+
+            }
+    }   }
+
+
+
+
+
+
+
+
+}

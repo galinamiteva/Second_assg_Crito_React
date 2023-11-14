@@ -252,7 +252,7 @@ footer .footer-down .container .social-media {
   align-items: center;
   justify-content: space-between;
 }
-.nav-section .container .scroll-to-top { /* !!!!!!!!!!!!!!!!!!!!! */
+.nav-section .container .scroll-to-top {
   position: fixed;
   bottom: 50px;
   right: 30px;
@@ -260,7 +260,7 @@ footer .footer-down .container .social-media {
   width: 40px;
 }
 .nav-section .container .hide {
-  display: none; /* !!!!!!!!!!!!!!!!!!!!! */
+  display: none;
 }
 .nav-section .container .logo {
   padding: 0 60px 0 0;
@@ -368,7 +368,7 @@ footer .footer-down .container .social-media {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   background-color: #F9D783;
   display: flex;
   flex-direction: column;
@@ -1663,4 +1663,38 @@ footer .footer-down .container .social-media {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   color: rgba(25, 25, 25, 0.8);
+}
+
+.contact-us {
+  padding-bottom: 120px;
+}
+.contact-us .container {
+  background-color: #F0EFE9;
+  text-align: center;
+  padding-bottom: 130px;
+  padding-top: 100px;
+}
+.contact-us .container .content-box {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .contact-us .container .content-box {
+    margin: 0 150px;
+  }
+}
+.contact-us .container .content-box h2 {
+  margin-bottom: 30px;
+}
+.contact-us .container .content-box input, .contact-us .container .content-box textarea {
+  border: none;
+  border-radius: 25px;
+  height: 56px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+.contact-us .container .content-box input#message, .contact-us .container .content-box textarea#message {
+  padding-top: 15px;
+  height: 160px;
+  padding-bottom: 45px;
 }

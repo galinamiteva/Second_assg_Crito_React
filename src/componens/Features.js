@@ -6,10 +6,10 @@ import Container from 'react-bootstrap/Container';
 const Features = () => {
 
 const services = [
-    {title:"Business Advice", icon:"fa-regular fa-handshake", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit." , url:"/services/businessadvice"},
-    {title:"Startup Business", icon:"fa-regular fa-lightbulb", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit." , url:"/services/startupbusiness"},
-    {title:"Financial Advice", icon:"fa-solid fa-ranking-star", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit." , url:"/services/financialadvice"},
-    {title:"Risk Management", icon:"fa-solid fa-box", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit." , url:"/services/riskmanagement"},
+    {title:"Business Advice", icon:"fa-regular fa-handshake", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit." , url:"/service"},
+    {title:"Startup Business", icon:"fa-regular fa-lightbulb", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit." , url:"/service"},
+    {title:"Financial Advice", icon:"fa-solid fa-ranking-star", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit." , url:"/service"},
+    {title:"Risk Management", icon:"fa-solid fa-box", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit." , url:"/service"},
 ]    
 
 
@@ -28,8 +28,6 @@ const services = [
                 </div>
             </div>
             <div className="features-aside">
-
-              
 
                 {
                     services.map((service, index) =>(
