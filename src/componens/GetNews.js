@@ -27,21 +27,20 @@ const GetNews = () => {
     <div className="container">
          <h2 className="title">Get News Updates By Signup</h2>
        <form metod="post" className="content-box" noValidate>
-           {/*1 variant ----  <input    name="email" className="signup-input" type="email" placeholder="username@domain.com" />  */}
-
+           
             <div className="form-bit">
-              {/* <label className={form.errors.email ? 'error' : ''}>{form.errors.email  ? form.errors.email : 'Email'}</label> */}
+              
               <label                    
-                    htmlFor='email'
+                    htmlFor='email'                    
                     className={form.errors.email && form.touched.email ? 'error' 
                     : !form.errors.email && form.touched.email ? 'success': ''}>
                     {form.errors.email && form.touched.email ? form.errors.email : "Email"}         
                 </label>
               
               
-              {/* <input className="finput" type="email" name="email" placeholder="Email..." value={form.values.email} onBlur={form.handleBlur} onChange={form.handleChange} /> */}
               <input 
                     id='email'
+                    placeholder="username@domain.com"
                     className={form.errors.email && form.touched.email ? 'finput-error'
                     :!form.errors.email && form.touched.email ? 'finput-success' : ''}
                      type="text" 

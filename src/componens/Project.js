@@ -29,7 +29,7 @@ const Project = () => {
 
         <div className="project-btn">
            
-            <Button text = 'All Recent Projects' url='/' theme = 'black' />
+            <Button text = 'All Recent Projects' url='#' theme = 'black' />
         </div> 
 
     </div>

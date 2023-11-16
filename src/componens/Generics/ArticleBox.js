@@ -4,10 +4,10 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 
 
-const ArticleBox = ({title, description, img, alt, url}) => {
+const ArticleBox = ({index, title, description, img, alt, url}) => {
 
   return (
-    <Link className="content-box" to= {url}>
+    <Link key = {index} className="content-box" to= {url}>
       <div className="article-img">
 
         <img src={img} alt={alt}/>

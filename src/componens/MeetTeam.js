@@ -29,12 +29,12 @@ const MeetTeam = () => {
 
             <div className="browse-button">                
                
-                <Button text = 'Browse Team' url='/service' theme = 'beige' />
+                <Button text = 'Browse Team' url='#' theme = 'beige' />
             </div>        
             
             <div className="browse-button-mobile">                
                
-                <Button text = 'Browse Team' url='/service' theme = 'beige' />
+                <Button text = 'Browse Team' url='#' theme = 'beige' />
             </div>               
           
             
@@ -70,7 +70,7 @@ const MeetTeam = () => {
         <section className="testimonial">
             
                 <div className="testimonial-title">
-                    <h5 className="red-text">Testimonial</h5>
+                    <h5 className="red-text">Testimonials</h5>
                     <h2 className="title">What Our Client Says</h2>
                 </div>
                 
@@ -83,9 +83,12 @@ const MeetTeam = () => {
 
                 </div>
 
-                <div className="testimonial-btn">
-                    <a href="/" className="button-black">All Reviews <i className="fa-solid fa-arrow-up-right-dots"></i></a>
-                </div>            
+                
+
+                <div className="testimonial-btn">                
+               
+                    <Button text = 'All Reviews' url='#' theme = 'black' />
+                </div>           
         </section>
 
     </div>
