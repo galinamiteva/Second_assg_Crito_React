@@ -745,7 +745,6 @@ footer .footer-down .container .social-media {
 
 .our-service {
   background-color: #F0EFE9;
-  margin-top: 120px;
   position: relative;
 }
 .our-service img {
@@ -1529,20 +1528,37 @@ footer .footer-down .container .social-media {
   margin-bottom: 10px;
   text-align: start;
 }
-.news-form .container form .form-bit input {
-  border: none;
-  padding: 15px 50px 10px 30px;
-  width: 100%;
-  border-radius: 25px;
-  margin-right: 10px;
-  text-align: center;
-  margin-bottom: 20px;
+.news-form .container form .form-bit .error {
+  margin-left: 25px;
+  margin-bottom: 8px;
+  color: #F94D1C;
+  font-weight: 400;
 }
-@media (min-width: 992px) {
-  .news-form .container form .form-bit input {
-    padding: 15px 50px 10px 30px;
-    width: auto;
-  }
+.news-form .container form .form-bit .success {
+  font-family: "DM sans", sans-serif;
+  margin-left: 25px;
+  margin-bottom: 8px;
+  color: #1b721b;
+  font-weight: 400;
+}
+.news-form .container form .form-bit input {
+  border-radius: 25px;
+  height: 56px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  text-align: center;
+}
+.news-form .container form .form-bit .finput-error {
+  color: #F94D1C;
+  border: 1px solid #F94D1C;
+  background-color: #f5e3e6;
+  outline: #F94D1C;
+}
+.news-form .container form .form-bit .finput-success {
+  color: #1b721b;
+  border: 1px solid #1b721b;
+  outline: #1b721b;
+  background-color: #d4edd4;
 }
 .news-form .container form .button-yellow {
   text-align: center;
@@ -1557,6 +1573,8 @@ footer .footer-down .container .social-media {
 }
 @media (min-width: 1200px) {
   .news-form .container form .button-yellow {
+    padding-left: 73px;
+    padding-right: 73px;
     width: auto;
   }
 }
@@ -1678,14 +1696,6 @@ footer .footer-down .container .social-media {
   color: rgba(25, 25, 25, 0.8);
 }
 
-.error {
-  font-family: "DM sans", sans-serif;
-  margin-left: 25px;
-  margin-bottom: 8px;
-  color: #F94D1C;
-  font-weight: 700;
-}
-
 .contact-us {
   padding-bottom: 120px;
 }
@@ -1723,17 +1733,44 @@ footer .footer-down .container .social-media {
   margin-bottom: 10px;
   text-align: start;
 }
+.contact-us .container .contact-content .content-box .form-bit .error {
+  margin-left: 25px;
+  margin-bottom: 8px;
+  color: #F94D1C;
+  font-weight: 400;
+}
+.contact-us .container .contact-content .content-box .form-bit .success {
+  font-family: "DM sans", sans-serif;
+  margin-left: 25px;
+  margin-bottom: 8px;
+  color: #1b721b;
+  font-weight: 400;
+}
+.contact-us .container .contact-content .content-box .form-bit .finput-error {
+  color: #F94D1C;
+  border: 1px solid #F94D1C;
+  background-color: #f5e3e6;
+  outline: #F94D1C;
+}
+.contact-us .container .contact-content .content-box .form-bit .finput-success {
+  color: #1b721b;
+  border: 1px solid #1b721b;
+  outline: #1b721b;
+  background-color: #d4edd4;
+}
 .contact-us .container .contact-content .content-box .form-bit input, .contact-us .container .contact-content .content-box .form-bit textarea {
-  border: none;
   border-radius: 25px;
   height: 56px;
   margin-bottom: 15px;
   padding-left: 20px;
 }
-.contact-us .container .contact-content .content-box .form-bit .message {
+.contact-us .container .contact-content .content-box .form-bit #message {
   padding-top: 15px;
   height: 160px;
   padding-bottom: 45px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding-left: 20px;
 }
 .contact-us .container .contact-content .content-box button {
   text-align: center;

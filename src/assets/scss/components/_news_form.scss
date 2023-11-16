@@ -1,7 +1,7 @@
 .news-form {
     margin-top: 160px; 
     background-color: $colour-beige;
-    padding-top: 115px; //100 Adobe
+    padding-top: 115px; 
     padding-bottom: 115px;
     position: relative;
     
@@ -32,22 +32,7 @@
         }
 
         form {
-            // .signup-input{
-                
-            //     border:none;
-            //     padding:15px 50px 10px 30px;
-            //     width: 100%;
-            //     border-radius: 25px;
-            //     margin-right: 10px;
-            //     text-align: center;
-            //     margin-bottom: 20px;    
-                
-            //     @media (min-width:992px) {
-            //         padding:15px 50px 10px 30px;
-            //         width: auto;
-            //     }
-
-            // }
+           
             .form-bit {
                 display: flex;
                 text-align: center;
@@ -64,20 +49,51 @@
                     text-align: start;
     
                 }
-                input{
-                    border:none;
-                    padding:15px 50px 10px 30px;
-                    width: 100%;
-                    border-radius: 25px;
-                    margin-right: 10px;
-                    text-align: center;
-                    margin-bottom: 20px;   
+
+                .error{
                     
-                    @media (min-width:992px) {
-                        padding:15px 50px 10px 30px;
-                        width: auto;
-                    }
+                    margin-left: 25px;
+                    margin-bottom: 8px;
+                    color: $colour-red;
+                    font-weight: $font-weight-regular-400;
                 }
+
+                .success{
+                    font-family: $font-dm-sants;
+                    margin-left: 25px;
+                    margin-bottom: 8px;
+                   
+                    color:$colour-green;
+                    font-weight: $font-weight-regular-400;
+                }
+
+                input{
+                    
+                    border-radius: 25px;
+                    height: 56px;
+                    margin-bottom: 15px;
+                    padding-left: 20px;                 
+                    text-align: center;
+
+                }
+
+                .finput-error{
+                    color:$colour-red;
+                    border: 1px solid $colour-red;
+                    background-color: $colour-red-backgr;
+                    outline: $colour-red;
+                }
+
+                .finput-success{
+                    
+                    color:$colour-green;
+                    border: 1px solid $colour-green;
+                    outline: $colour-green;
+                    background-color: $colour-green-backgr;
+                }
+    
+               
+              
             }
             .button-yellow{
                            
@@ -93,7 +109,8 @@
 
                 @media (min-width:1200px) {
                             
-                    
+                    padding-left:73px ;
+                    padding-right:73px ;
                     width: auto;
                    
                 }

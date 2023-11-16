@@ -26,7 +26,7 @@ const NavSection = () => {
 
         <Container className="container">      
 
-        <Link to='/'> <img src={companyLogo} alt="company-Crito-logo" className="logo"/></Link>
+        <img src={companyLogo} alt="company-Crito-logo" className="logo"/>
          
            
                 <nav className="navigation-bar">
@@ -35,7 +35,9 @@ const NavSection = () => {
                         
                             <span className="number"> <i className="fa-solid fa-phone-volume"></i> +46 (8) 121 470 50</span>
                             <span className="email"> <i className="fa-regular fa-envelope"></i> info@crito.com</span> 
-                            <span className="address"> <i className="fa-solid fa-location-dot"></i> Sveavägen 31, 111 34 STOCKHOLM</span> 
+                            <span className="address"> <i className="fa-solid fa-location-dot"></i>
+                            <Link to="https://maps.app.goo.gl/JUjns7mUxx5Q5QEL8" target="_blank" rel="noreferrer">Sveavägen 31 111 34 Stockholm</Link>                         
+                             </span> 
                         </div>
                         <div className="social-media">
                             

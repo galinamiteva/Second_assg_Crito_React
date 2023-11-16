@@ -36,7 +36,7 @@ const ContactUs = () => {  //https://www.regextester.com  - validator Regex
       });
 
       if (response.status === 200) {
-        alert('Message sent!'); // bättre med feedback  med grön färg -nåt paragrafh!!! Use state funktion
+        alert('Message sent!'); // bättre med feedback  med grön färg -nåt paragrafh!!! Use state funktion?
         
         resetForm({values:''})
       } else if (response.status === 400) {
@@ -63,22 +63,64 @@ const ContactUs = () => {  //https://www.regextester.com  - validator Regex
                   <h2 className="title">Leave us a message <br/> for any information</h2>
             </div>
 
-
             <form method="post" className="content-box" onSubmit={form.handleSubmit} noValidate>
                
                 <div className="form-bit">
-                    <label className={form.errors.name  ? 'error' : ''}> {form.errors.name ? form.errors.name : 'Name'}</label>
-                    <input className="finput" type="text" name="name" placeholder="Name..." value={form.values.name} onBlur={form.handleBlur} onChange={form.handleChange} />
+                    <label 
+                    htmlFor='name'
+                    className={form.errors.name && form.touched.name ? 'error' 
+                    : !form.errors.name && form.touched.name ? 'success': ''}>
+                    {form.errors.name && form.touched.name ? form.errors.name : "Name"}         
+                    </label>
+                    <input 
+                    id='name'
+                    className={form.errors.name && form.touched.name ? 'finput-error'
+                    :!form.errors.name && form.touched.name ? 'finput-success': ''}
+                     type="text" 
+                     name="name"                     
+                     value={form.values.name} 
+                     onBlur={form.handleBlur} 
+                     onChange={form.handleChange} 
+                     required/>
                 </div>
 
                 <div className="form-bit">
-                    <label className={form.errors.email ? 'error' : ''}>{form.errors.email  ? form.errors.email : 'Email'}</label>
-                    <input className="finput" type="email" name="email" placeholder="Email..." value={form.values.email} onBlur={form.handleBlur} onChange={form.handleChange} />
+                <label                    
+                    htmlFor='email'
+                    className={form.errors.email && form.touched.email ? 'error' 
+                    : !form.errors.email && form.touched.email ? 'success': ''}>
+                    {form.errors.email && form.touched.email ? form.errors.email : "Email"}         
+                </label>
+                    
+                    <input 
+                    id='email'
+                    className={form.errors.email && form.touched.email ? 'finput-error'
+                    :!form.errors.email && form.touched.email ? 'finput-success' : ''}
+                     type="text" 
+                     name="email"                     
+                     value={form.values.email} 
+                     onBlur={form.handleBlur} 
+                     onChange={form.handleChange} 
+                     required/>
                 </div>
 
                 <div className="form-bit">
-                    <label className={form.errors.message ? 'error' : ''}>{form.errors.message  ? form.errors.message : 'Message'}</label>
-                    <textarea className="finput message" name="message" placeholder="Message..." value={form.values.message} onBlur={form.handleBlur} onChange={form.handleChange} />
+                <label 
+                  htmlFor='message'
+                  className={form.errors.message && form.touched.message ? 'error'
+                  : !form.errors.message && form.touched.message ? 'success': ''}>
+                  {form.errors.message && form.touched.message ? form.errors.message : "Your Message"}
+                </label>
+                <textarea
+                  id='message'
+                  value={form.values.message}
+                  onChange={form.handleChange}
+                  onBlur={form.handleBlur}
+                  name='message'
+                  className={form.errors.message && form.touched.message ? 'finput-error'
+                  :!form.errors.message && form.touched.message ? 'finput-success': ''}
+                  required>
+                </textarea>
                 </div>         
      
                 

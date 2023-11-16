@@ -8,15 +8,30 @@ import Container from 'react-bootstrap/Container';
 
 
 const CompanyLogos = () => {
-  return (
 
+
+
+const logos = [
+  { name: 'Paperz', src:`${Paperz}`, alt: 'paperz logo' },
+  { name: 'Dorfus', src: `${Dorfus}`, alt: 'dorfus logo' },
+  { name: 'Martino', src: `${Martino}`,  alt: 'martino logo' },
+  { name: 'Square', src: `${Square}`,  alt: 'square logo' },
+  { name: 'Gobona', src: `${Gobona}`,  alt: 'gobona logo' },
+]
+
+
+  return (
     <section className="company_logos">
         <Container className="container">
-            <img src={Paperz} alt="logo paperz"/>
-            <img src={Dorfus} alt="logo dorfus"/>
-            <img src={Martino} alt="logo martino"/>
-            <img src={Square} alt="logo square"/>
-            <img src={Gobona} alt="logo gobona"/>        
+           
+               
+            {
+              logos.map((logos, index)=>(
+                <img key={logos.name} src={logos.src} alt={logos.alt}/>  
+              ))
+            }
+
+
         </Container>
     </section>
 
