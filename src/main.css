@@ -1414,7 +1414,7 @@ footer .footer-down .container .social-media {
 }
 .article .container .article-title .button-beige {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: center;
   width: 100%;
@@ -1516,7 +1516,20 @@ footer .footer-down .container .social-media {
     display: flex;
   }
 }
-.news-form .container form .signup-input {
+.news-form .container form .form-bit {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 20px;
+}
+.news-form .container form .form-bit label {
+  font-family: "DM sans", sans-serif;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+.news-form .container form .form-bit input {
   border: none;
   padding: 15px 50px 10px 30px;
   width: 100%;
@@ -1526,7 +1539,7 @@ footer .footer-down .container .social-media {
   margin-bottom: 20px;
 }
 @media (min-width: 992px) {
-  .news-form .container form .signup-input {
+  .news-form .container form .form-bit input {
     padding: 15px 50px 10px 30px;
     width: auto;
   }
@@ -1665,36 +1678,64 @@ footer .footer-down .container .social-media {
   color: rgba(25, 25, 25, 0.8);
 }
 
+.error {
+  font-family: "DM sans", sans-serif;
+  margin-left: 25px;
+  margin-bottom: 8px;
+  color: #F94D1C;
+  font-weight: 700;
+}
+
 .contact-us {
   padding-bottom: 120px;
 }
 .contact-us .container {
+  display: flex;
+  flex-direction: column;
   background-color: #F0EFE9;
   text-align: center;
+  align-items: center;
   padding-bottom: 130px;
   padding-top: 100px;
 }
-.contact-us .container .content-box {
-  display: flex;
-  flex-direction: column;
+.contact-us .container .contact-content {
+  width: 80%;
 }
-@media (min-width: 992px) {
-  .contact-us .container .content-box {
-    margin: 0 150px;
+.contact-us .container .contact-content .title-form h2 {
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+@media (min-width: 1200px) {
+  .contact-us .container .contact-content .title-form h2 {
+    font-size: 45px;
   }
 }
-.contact-us .container .content-box h2 {
-  margin-bottom: 30px;
+.contact-us .container .contact-content .content-box .form-bit {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 20px;
 }
-.contact-us .container .content-box input, .contact-us .container .content-box textarea {
+.contact-us .container .contact-content .content-box .form-bit label {
+  font-family: "DM sans", sans-serif;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+.contact-us .container .contact-content .content-box .form-bit input, .contact-us .container .contact-content .content-box .form-bit textarea {
   border: none;
   border-radius: 25px;
   height: 56px;
   margin-bottom: 15px;
   padding-left: 20px;
 }
-.contact-us .container .content-box input#message, .contact-us .container .content-box textarea#message {
+.contact-us .container .contact-content .content-box .form-bit .message {
   padding-top: 15px;
   height: 160px;
   padding-bottom: 45px;
+}
+.contact-us .container .contact-content .content-box button {
+  text-align: center;
+  width: 100%;
 }

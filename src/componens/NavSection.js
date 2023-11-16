@@ -79,7 +79,7 @@ const NavSection = () => {
                 {menuActiv ?
                 (
                     <div className='menu-mobil'>
-                        <button onClick={toggleMenu} className='menu-mobil-toggle'><i class="fa-solid fa-xmark"></i></button>
+                        <button onClick={toggleMenu} className='menu-mobil-toggle'><i className="fa-solid fa-xmark"></i></button>
                         <div className='nav-links'>
                             <NavLink to='/'>Home</NavLink>
                             <NavLink to='/service'>Services</NavLink>
